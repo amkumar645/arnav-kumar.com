@@ -17,9 +17,9 @@ const Home = () => {
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i,&nbsp;</span>
-                    <span className={`${letterClass} _13`}>I'</span>
-                    <span className={`${letterClass} _14`}>m</span>
+                    <span className={`${letterClass} _1`}>i,&nbsp;</span>
+                    <span className={`${letterClass} _2`}>I'</span>
+                    <span className={`${letterClass} _3`}>m</span>
                     <br></br>
                     <AnimatedLetters letterClass={letterClass} strArray={nameArray} index={15}></AnimatedLetters>
                 </h1>
