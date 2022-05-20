@@ -1,0 +1,54 @@
+@media only screen and (min-width: 500px) {
+    .text-animate {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate:hover {
+        color:#ffd700;
+    }
+    
+    @for $i from 15 through 25 {
+        .text-animate._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 8vw;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .text-animate {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate:hover {
+        color:#ffd700;
+    }
+    
+    @for $i from 15 through 25 {
+        .text-animate._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:hsl(209, 100%, 50%);
+            font-size: 12vw;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+}
+

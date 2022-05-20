@@ -6,6 +6,7 @@
     top: 0;
     z-index: 3;
     min-width: 500px;
+    // animation: fadeIn 1s 3s backwards;
 
     .logo {
         display: block;
@@ -16,11 +17,24 @@
             margin: auto 16px;
             width: 60px;
             height: auto;
-
-            // &.sub-logo {
-            //     width: 50px;
-            // }
         }
+    }
+
+    button {
+        position: fixed;
+        font-size: 25px;
+        right: 40px;
+        top: 23px;
+        z-index: 10;
+        background: transparent;;
+        border: none;
+        cursor: pointer;
+        display: none;
+        color:#4d4d4e;
+    }
+
+    button:hover {
+        color: #ffd700
     }
 }
 
@@ -28,10 +42,8 @@ nav {
     display: block;
     text-align: center;
     position: absolute;
-    // width: 1000px;
     left: 15%;
     top: 20%;
-    // margin-top: -10px;
     height: 100%;
 
     a {
@@ -108,29 +120,126 @@ nav {
             color:#ffd700;
         }
     }
+
+    .menuNav {
+        overflow-y: scroll;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        background: #181818;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 0;
+        overflow: hidden;
+        visibility:hidden;
+
+        max-width: 100px;
+        z-index: 9;
+    }
+      
+    .menuNav.showMenu {
+        width: -10;
+        visibility:hidden;
+
+
+        li {
+            a {
+                text-align: right;
+                color: #181818;
+                position: relative;
+                font-size: 1.4rem;
+                right: 40px;
+                top: 48px;
+                z-index: 0;
+
+                &:hover {
+                    color:#ffd700;
+                }
+
+                &:first-child {
+                    &::after {
+                        content:'';
+                    }
+                }
+            }
+
+            a.active {
+                svg {
+                    color:#ffd700;
+                }
+            }
+        }
+    }
 }
 
-// ul {
-//     position: absolute;
-//     top: 20%;
-//     right: 48px;
-//     height: 100%;
-//     display: block;
-//     padding: 0;
-//     list-style: none;
-//     text-align: center;
-//     margin: 0;
+@media only screen and (max-width: 500px) {
+    .nav-bar {
+        button {
+            position: fixed;
+            font-size: 25px;
+            right: 20px;
+            top: 23px;
+            z-index: 10;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: block;
+        }
 
-//     li {
-//         a {
-//             padding: 7px 0;
-//             display: block;
-//             font-size: 18px;
-//             line-height: 16px;
+        button:hover {
+            color: #ffd700;
+        }
+    }
 
-//             &:hover svg {
-//                 color: #ffd700
-//             }
-//         }
-//     }
-// }
+    nav {
+        a {
+            display: none;
+        }
+
+        .menuNav {
+            list-style: none;
+            position: fixed;
+            top: 0;
+            background: #181818;
+            right: 0;
+            bottom: 0;
+            height: 100vh;
+            width: 0;
+            visibility:hidden;
+            overflow: hidden;
+            max-width: 100px;
+            z-index: 9;
+        }
+          
+        .menuNav.showMenu {
+            width: 100%;
+            visibility: visible;
+            transition: all 2s ease-out;  
+            background: #181818;    
+
+            li {
+                a {
+                    color: white;
+                    position: relative;
+                    font-size: 1.4rem;
+                    // right: 40px;
+                    top: 48px;
+                    margin-left: 40px;
+                    z-index: 10;
+                    display: flex;
+    
+                    &:hover {
+                        color:#ffd700;
+                    }
+    
+                    &:first-child {
+                        &::after {
+                            content:'';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
