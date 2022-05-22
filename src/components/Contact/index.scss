@@ -330,8 +330,71 @@
                     text-decoration: none;
                     padding: 8px 10px;
                     border: 1px solid #ffd700;
-                    float: right;
+                    float: middle;
                     border-radius: 4px;
+                }
+                
+                .flat-button:hover {
+                    color:white;
+                    background-color: #9b870c;
+                    transition: all 0.2s ease;
+                    cursor: pointer
+                }
+
+                a {
+                    font-size:32px;
+                    position: relative;
+                    text-decoration: none;
+                    width: 64px;
+                    color:#4d4d4e;
+                    animation: fadeIn 1s 2.5s backwards;
+                    float: left;
+                    top: -7px;
+                    padding-bottom: 20px;
+                }
+
+                i {
+                    transition: all 0.3s ease-out;
+                }
+        
+                a:hover {
+                    color:#ffd700;
+                    
+                    svg {
+                        opacity: 1;
+                    }
+        
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                a:after {
+                    content: 'GITHUB';
+                    font-size: 9px;
+                    letter-spacing: 2px;
+                    position: relative;
+                    left: 10px;
+                    bottom: 0;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+                }
+            
+                a.linkedin-link {
+                    &:after {
+                        content: 'LINKEDIN';
+                        left: 6px;
+                    }
+                }
+            
+                a.resume-link {
+                    &:after {
+                        content: 'RESUME';
+                        right:6px;
+                    }
                 }
             }
         }
