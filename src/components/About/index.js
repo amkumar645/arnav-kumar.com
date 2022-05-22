@@ -5,10 +5,11 @@ import { useState } from 'react';
 import AboutImage from '../../assets/images/about_img5.jpg';
 import Skills from './Skills';
 
-
 const About = () => {
     const [letterClass] = useState('text-animate');
-    return (
+
+   return (
+       <>
         <div className="container about-page">
             <div className="text-zone">
                 <h1>
@@ -44,6 +45,8 @@ const About = () => {
                 <Skills id="skills"></Skills>
             </div>
         </div>
+        {/* <Loader type="pacman"></Loader> */}
+        </>
     )
 }
 
