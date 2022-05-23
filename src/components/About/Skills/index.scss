@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
     .skill-container {
         .text-zone {
             width: 90%;
@@ -18,12 +18,12 @@
                 color: white;
                 margin-top: 0.5px;
                 // max-width: 50px;
-                font-size: 13px;
+                font-size: 20px;
                 font-family: sans-serif;
             }
 
             img {
-                width:80px;
+                width:120px;
                 transition: all .2s ease-in-out;
             }
 
@@ -71,11 +71,13 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width:650px) {
     .skill-container {
         .text-zone {
+            top:30%;
             width: 90%;
             animation: fadeIn 1s 1s;
+            padding-bottom:20%;
         }
 
         .grid-container {
@@ -91,12 +93,12 @@
                 color: white;
                 margin-top: 0.5px;
                 // max-width: 50px;
-                font-size: 10px;
+                font-size: 15px;
                 font-family: sans-serif;
             }
 
             img {
-                width:50px;
+                width:90px;
                 transition: all .2s ease-in-out;
 
             }

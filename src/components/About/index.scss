@@ -1,9 +1,9 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
     .about-page {
         text-align: left;
         .text-zone {
             position: absolute;
-            top: 28%;
+            top: 180px;
             padding: 5%;
             transform: translateY(-50%);
             width: 50%;
@@ -40,13 +40,13 @@
         }
 
         p {
-            font-size: 13px;
+            font-size: 18px;
             color:#fff;
             font-family: sans-serif;
             font-weight: 300;
             min-width: fit-content;
             animation: pulse 1s;
-            line-height: 20px;
+            line-height: 25px;
 
             &:nth-of-type(1) {
                 animation-delay:2.4s;
@@ -83,17 +83,17 @@
         padding-top: 5%;
         padding-bottom: 5%;
         position: relative;
-        top:430px;
+        top:790px;
         height: 110vh;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
     .about-page {
         text-align: center;
         .text-zone {
             position: absolute;
-            top: 30%;
+            top: 100px;
             padding: 5%;
             transform: translateY(-50%);
             width: 90%;
@@ -118,7 +118,7 @@
         }
 
         p {
-            font-size: 13px;
+            font-size: 15px;
             color:#fff;
             font-family: sans-serif;
             font-weight: 300;

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .text-animate {
         display: inline-block;
         opacity: 0;
@@ -16,7 +16,7 @@
             animation-delay: #{calc($i / 10)}s;
             // text-shadow: 1px 1px #ffd700;
             color:#0082FF;
-            font-size: 8vw;
+            font-size: 9vw;
     
             &:hover {
                 color: #ffd700;
@@ -25,7 +25,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .text-animate {
         display: inline-block;
         opacity: 0;

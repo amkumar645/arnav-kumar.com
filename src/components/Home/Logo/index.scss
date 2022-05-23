@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     .logo-container {
         position: absolute;
         left: 60%;
@@ -39,10 +39,10 @@
       }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .logo-container {
         position: relative;
-        top: 280px;
+        top: 450px;
         transform: translateY(-50%);
         width: 100%;
         text-align: center;

@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="text-zone">
                 <h1>
                     <AnimatedLetters
-                    strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '!']}
+                    strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', ' ', 'm', 'e', '!']}
                     index={15}
                     letterClass={letterClass}
                     >
