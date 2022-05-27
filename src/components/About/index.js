@@ -21,7 +21,7 @@ const About = () => {
                 </h1>
                 <p>
                     I'm a current undergraduate at <Link to="/experience">Princeton University</Link> majoring in Computer Science and 
-                    pursuing minors in Statistics and Machine Learning, Finance, and Engineering and Management Systems.
+                    pursuing minors in Statistics and Machine Learning, Finance, and Optimization and Quantitative Decision Science.
                 </p>
                 <p>
                     My main interests include software development, data science,

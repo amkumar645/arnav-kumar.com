@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
     .text-animate {
         display: inline-block;
         opacity: 0;
@@ -11,7 +11,7 @@
         color:#ffd700;
     }
     
-    @for $i from 15 through 28 {
+    @for $i from 15 through 35 {
         .text-animate._#{$i} {
             animation-delay: #{calc($i / 10)}s;
             // text-shadow: 1px 1px #ffd700;
@@ -23,9 +23,59 @@
             }
         }
     }
+
+    .text-animate2 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate2:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate2._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 100px;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+
+    .text-animate3 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate3:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate3._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 68px;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .text-animate {
         display: inline-block;
         opacity: 0;
@@ -44,6 +94,57 @@
             // text-shadow: 1px 1px #ffd700;
             color:hsl(209, 100%, 50%);
             font-size: 12vw;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+
+
+    .text-animate2 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate2:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate2._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 70px;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+
+    .text-animate3 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate3:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate3._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 50px;
     
             &:hover {
                 color: #ffd700;

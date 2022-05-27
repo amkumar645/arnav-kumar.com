@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faGoogleDrive, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
-    const [letterClass] = useState('text-animate');
+    const [letterClass] = useState('text-animate2');
     const refForm = useRef();
 
     const sendEmail = (e) => {
