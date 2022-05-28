@@ -46,10 +46,10 @@ const Work = () => {
                         <p className="job-title">ORF245: Undergraduate Course Assistant</p>
                         <p className="job-date">September 2021 - May 2022</p>
                         <div className="job-description">
-                            From September 2021 - December 2021, I graded problem sets and gave input on the details of the class for ORF245: Fundamentals of Statistics
+                            From September 2021 - December 2021, I graded problem sets and gave input on the details of the class for ORF245: Fundamentals of Statistics.
                             <br></br>
                             <br></br>
-                            From January 2022 - May 2022, I held office hours once a week and helped review problems before the midterm and the final
+                            From January 2022 - May 2022, I held office hours once a week and helped review problems before the midterm and the final.
                         </div>
                     </li>
                     <li>
