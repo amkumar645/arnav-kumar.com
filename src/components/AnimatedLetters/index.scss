@@ -81,6 +81,32 @@
         animation-fill-mode: forwards;
         min-width: 10px;
     }
+
+    .text-animate5 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate5:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate5._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            // font-size: 82px;
+            font-size: 8vw;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -153,6 +179,31 @@
             // text-shadow: 1px 1px #ffd700;
             color:#0082FF;
             font-size: 50px;
+    
+            &:hover {
+                color: #ffd700;
+            }
+        }
+    }
+
+    .text-animate5 {
+        display: inline-block;
+        opacity: 0;
+        animation: fadeIn 1s 1s;
+        animation-fill-mode: forwards;
+        min-width: 10px;
+    }
+    
+    .text-animate5:hover {
+        color:#ffd700;
+    }
+
+    @for $i from 15 through 35 {
+        .text-animate5._#{$i} {
+            animation-delay: #{calc($i / 10)}s;
+            // text-shadow: 1px 1px #ffd700;
+            color:#0082FF;
+            font-size: 65px;
     
             &:hover {
                 color: #ffd700;
