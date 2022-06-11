@@ -154,7 +154,8 @@ const Projects = () => {
             image={Piel_Desc}
             image2={Piel_2}
             languages="Python"
-            presentation="https://docs.google.com/presentation/d/1tkQlTwsZEU5eH1DXSbgSpfj7zQMoMvnwnTGeE7f49Bs/edit?usp=sharing">
+            liveSite="https://sites.google.com/brown.edu/piel/home"
+            >
             </Modal>}
             {isOpenNBA && <Modal
             setIsOpen={setIsOpenNBA} 

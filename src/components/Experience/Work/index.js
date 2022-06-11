@@ -36,7 +36,16 @@ const Work = () => {
                         <a className="job-name" href="https://www.mitre.org/" target="_blank" rel="noreferrer">MITRE</a>    
                         <p className="job-title">Software Engineer Intern</p>
                         <p className="job-date">June 2022 - August 2022</p>
-                        <div className="job-description">Here is the description</div>
+                        <div className="job-description">
+                            Here, I worked as part of the data analytics team, creating a machine learning project in R
+                            to help test certain products being released by the company.
+                            <br></br>
+                            <br></br>
+                            As part of my work, I had to learn how to run applications in R with 
+                            OpenShift and Kubernetes, went to weekly meetings with the team to discuss
+                            work and interactions between our tasks, and presented my work to company
+                            employees and leaders at the end of the internship.
+                        </div>
                     </li>
                     <li>
                         <img className="job-img" src={ORFEImg} alt="ORFE Logo"></img>
