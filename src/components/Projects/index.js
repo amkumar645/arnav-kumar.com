@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import TigerTasks_Logo from '../../assets/images/projects/tigertasks_1.png';
 import Princetemon_Logo from '../../assets/images/projects/princetemon_1.png';
 import Website_Logo from '../../assets/images/projects/website_1.png';
 import Piel_Logo from '../../assets/images/projects/piel_1.png';
@@ -20,22 +21,25 @@ import { Modal } from 'react-responsive-modal';
 
 import JS from '../../assets/skill-icons/js.png';
 import REACT_img from '../../assets/skill-icons/react.png';
+import Golang from '../../assets/skill-icons/golang.png';
 import HTML5 from '../../assets/skill-icons/html5.png';
 // import CSS3 from '../../assets/skill-icons/css3.png';
 import SCSS from '../../assets/skill-icons/scss.png';
 import Python from '../../assets/skill-icons/python.png';
 import Angular from '../../assets/skill-icons/angular.png';
 import Bootstrap from '../../assets/skill-icons/bootstrap.png';
+import MongoDB from '../../assets/skill-icons/mongodb.png';
 
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import Modal from './Modal';
 
 
 const Projects = () => {
     const [letterClass] = useState('text-animate5');
+    const [isOpenTigerTasks, setIsOpenTigerTasks] = useState(false);
     const [isOpenPrincetemon, setIsOpenPrincetemon] = useState(false);
     const [isOpenWebsite, setIsOpenWebsite] = useState(false);
     const [isOpenPiel, setIsOpenPiel] = useState(false);
@@ -56,6 +60,70 @@ const Projects = () => {
                     Check out some of my projects below! Click on them for more information.
                 </p>
                 <div className="grid-container">
+                <div className="grid-item">
+                        <img src={TigerTasks_Logo} alt="TigerTasks" onClick={() => setIsOpenTigerTasks(true)}></img>
+                        <div>TigerTasks</div>
+                        <span className="grid-logos">
+                            <img className="grid-logo" src={REACT_img} alt="React"></img>
+                            <img className="grid-logo" src={Golang} alt="Golang"></img>
+                            <img className="grid-logo" src={MongoDB} alt="MongoDB"></img>
+                        </span>
+                </div>
+                <Modal open={isOpenTigerTasks} 
+                    onClose={() => setIsOpenTigerTasks(false)} 
+                    center
+                    classNames={{
+                        overlay: 'customOverlay',
+                        modal: 'customModal',
+                    }}>
+                        <h1 className="heading">TigerTasks</h1>
+                        <img src={Princetemon_Desc} alt="Project"></img>
+                        <br></br>
+                        <div>
+                            TigerTasks 1
+                        </div>
+                        <br></br>
+                        <img src={Princetemon_2} alt="Project Alternate"></img>
+                        <br></br>
+                        <div>
+                            TigerTasks 2
+                        </div>
+                        <br></br>
+                        <div>
+                            Note that this website only works for Princeton students,
+                            so check out my video and Github for information on it if
+                            you can't access it!
+                        </div>
+                        <br></br>
+                        <b>Languages Used:&nbsp;</b>React, Go, MongoDB
+                        <div className="actionsContainer">
+                            <a href="https://tigertasks.herokuapp.com" target="_blank" rel="noreferrer">
+                                <button className="demoBtn">
+                                    Live Demo &nbsp;
+                                    <FontAwesomeIcon icon={faUpRightFromSquare} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <a href="https://github.com/amkumar645/tigertasks" target="_blank" rel="noreferrer">
+                                <button className="videoBtn">
+                                    Video &nbsp;
+                                    <FontAwesomeIcon icon={faPlay} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <a href="https://github.com/amkumar645/tigertasks" target="_blank" rel="noreferrer">
+                                <button className="codeBtn">
+                                    Code &nbsp;
+                                    <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <button
+                                className="cancelBtn"
+                                onClick={() => setIsOpenTigerTasks(false)}
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </Modal>
+
                     <div className="grid-item">
                         <img src={Princetemon_Logo} alt="Princetemon" onClick={() => setIsOpenPrincetemon(true)}></img>
                         <div>Princetemon</div>
@@ -311,35 +379,6 @@ const Projects = () => {
                     </Modal>
                 </div>
             </div>
-            {/* 
-
-            {isOpenNBA && <Modal
-            setIsOpen={setIsOpenNBA} 
-            title="NBA Comparer"
-            content="As a big fan of basketball, I love comparing NBA players statistics 
-                    in order to judge who's having a good season and who isn't. One day, 
-                    when I was first learning Angular, I decided a great way to practice 
-                    was to create a website dedicated to comparing NBA players' statistics 
-                    against each other, so I did. As my first ever website, it has some issues, 
-                    but the functionality is there."
-            content2="This website, while quite simple, has a lot of underlying processes. 
-                    All the data came from merging preexisting datasets in Python, and 
-                    all the images were scraped from basketball-reference.com. 
-                    The data covers years 1950-2021, allowing the user to compare 
-                    any two individual seasons for any two individual players in this range. 
-                    In addition, there is a section where the user can view the data 
-                    season-by-season, and sort it according to different statistics. 
-                    Lastly, due to the changing nature of the NBA, there is a way to compare 
-                    adjusted statistics, which standardizes based on season."
-            content3="The website and functionality were all done in Angular, and the 
-                    data collection and cleaning was done in Python.
-                    Check it out using the link below!"
-            image={NBA_Desc}
-            image2={NBA_2}
-            languages="Angular, Bootstrap, HTML/CSS/TS, Python"
-            liveSite="https://nba-comparer.herokuapp.com"
-            code="https://github.com/amkumar645/NBA-Comparer">
-            </Modal>} */}
         </div>
     );
 }

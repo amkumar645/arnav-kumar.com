@@ -9,7 +9,7 @@ import REACT_img from '../../../assets/skill-icons/react.png';
 import Angular from '../../../assets/skill-icons/angular.png';
 import Bootstrap from '../../../assets/skill-icons/bootstrap.png';
 import Golang from '../../../assets/skill-icons/golang.png';
-import PostgreSQL from '../../../assets/skill-icons/postgresql.png';
+import MongoDB from '../../../assets/skill-icons/mongodb.png';
 import Java from '../../../assets/skill-icons/java.png';
 import Python from '../../../assets/skill-icons/python.png';
 import C from '../../../assets/skill-icons/c.png';
@@ -72,8 +72,8 @@ const Skills = () => {
                         <div className="button4 backend">Backend</div>
                     </div>
                     <div className="grid-item">
-                        <img src={PostgreSQL} alt="PostreSQL"></img>
-                        <div>PostgreSQL</div>
+                        <img src={MongoDB} alt="MongoDB"></img>
+                        <div>MongoDB</div>
                         <div className="button4 backend">Backend</div>
                     </div>
                     <div className="grid-item">
