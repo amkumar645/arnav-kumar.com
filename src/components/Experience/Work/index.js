@@ -38,7 +38,8 @@ const Work = () => {
                         <p className="job-date">June 2022 - August 2022</p>
                         <div className="job-description">
                             Here, I worked as part of the data analytics team, creating a machine learning project in R
-                            to help test certain products being released by the company.
+                            and helping test/develop the company data analytics portal, container platform, and 
+                            virtual desktops.
                             <br></br>
                             <br></br>
                             As part of my work, I had to learn how to run applications in R with 

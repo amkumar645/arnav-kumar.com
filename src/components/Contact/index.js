@@ -76,7 +76,7 @@ const Contact = () => {
                             <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/arnav-kumar-9816601bb/" className="linkedin-link">
                                 <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1Jq41dp9-UmAwbKTsR0h_n0P0fYtSyU5t/view?usp=sharing" className="resume-link">
+                            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1UHGp5iwoxbSHZfguCDUZV41DYDDI7hIV/view?usp=sharing" className="resume-link">
                                 <FontAwesomeIcon icon={faGoogleDrive}></FontAwesomeIcon>
                             </a>
                             <input type="submit" className="flat-button" value="SEND"></input>
