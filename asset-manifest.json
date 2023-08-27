@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc53713c.css",
-    "main.js": "/static/js/main.bb52ce90.js",
+    "main.js": "/static/js/main.df4074ce.js",
     "static/js/787.6ffdacbf.chunk.js": "/static/js/787.6ffdacbf.chunk.js",
     "static/media/nba_comparer_2.png": "/static/media/nba_comparer_2.06128340f9d1c273398d.png",
     "static/media/princetemon_2.png": "/static/media/princetemon_2.e9da37867cadcff1dce8.png",
@@ -23,6 +23,7 @@
     "static/media/website_1.png": "/static/media/website_1.94f82e321dec1e0d930d.png",
     "static/media/nba_comparer_1.png": "/static/media/nba_comparer_1.dfd75e5687b9f629e962.png",
     "static/media/tigertasks_1.png": "/static/media/tigertasks_1.497d0f725444420cdb5e.png",
+    "static/media/aws.png": "/static/media/aws.fb1701598142ff1ae542.png",
     "static/media/mitre.png": "/static/media/mitre.e6015392038a96bf395b.png",
     "static/media/r.png": "/static/media/r.8089792194c83554fcb9.png",
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
@@ -37,11 +38,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.dc53713c.css.map": "/static/css/main.dc53713c.css.map",
-    "main.bb52ce90.js.map": "/static/js/main.bb52ce90.js.map",
+    "main.df4074ce.js.map": "/static/js/main.df4074ce.js.map",
     "787.6ffdacbf.chunk.js.map": "/static/js/787.6ffdacbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc53713c.css",
-    "static/js/main.bb52ce90.js"
+    "static/js/main.df4074ce.js"
   ]
 }
