@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './index.scss';
 import MITREImg from '../../../assets/images/work/mitre.png';
-import ORFEImg from '../../../assets/images/work/orfe.png';
 import RIAImg from '../../../assets/images/work/ria.png';
+import AWSImg from '../../../assets/images/work/aws.png';
 
 
 
@@ -30,6 +30,23 @@ const Work = () => {
                 </h1>
                 <ul className="job">
                     <li>
+                        <img className="job-img" src={AWSImg} alt="AWS Logo"></img>
+                        <br></br>
+                        <br></br>     
+                        <a className="job-name" href="https://docs.aws.amazon.com/migrationhub-refactor-spaces/latest/userguide/what-is-mhub-refactor-spaces.html" target="_blank" rel="noreferrer">Amazon Web Services</a>    
+                        <p className="job-title">Software Development Engineer Intern</p>
+                        <p className="job-date">June 2023 - August 2023</p>
+                        <div className="job-description">
+                            At AWS, I worked on the AWS Migration Hub Refactor Spaces team, where I designed, implemented, and demoed
+                            an end-to-end feature for the service.
+                            <br></br>
+                            <br></br>
+                            I used Java to provise AWS infrastructure as code, used AWS Lambda packages to 
+                            develop the feature logic, and used React and Redux Saga to display my changes on the console. I then 
+                            demoed my work to the Migration Hub team. 
+                        </div>
+                    </li>
+                    <li>
                         <img className="job-img" src={MITREImg} alt="MITRE Logo"></img>
                         <br></br>
                         <br></br>     
@@ -46,20 +63,6 @@ const Work = () => {
                             OpenShift and Kubernetes, went to weekly meetings with the team to discuss
                             work and interactions between our tasks, and presented my work to company
                             employees and leaders at the end of the internship.
-                        </div>
-                    </li>
-                    <li>
-                        <img className="job-img" src={ORFEImg} alt="ORFE Logo"></img>
-                        <br></br>
-                        <br></br>     
-                        <a className="job-name" href="https://orfe.princeton.edu/" target="_blank" rel="noreferrer">ORFE Department</a>    
-                        <p className="job-title">ORF245: Undergraduate Course Assistant</p>
-                        <p className="job-date">September 2021 - May 2022</p>
-                        <div className="job-description">
-                            From September 2021 - December 2021, I graded problem sets and gave input on the details of the class for ORF245: Fundamentals of Statistics.
-                            <br></br>
-                            <br></br>
-                            From January 2022 - May 2022, I held office hours once a week and helped review problems before the midterm and the final.
                         </div>
                     </li>
                     <li>

@@ -14,6 +14,7 @@ import Java from '../../../assets/skill-icons/java.png';
 import Python from '../../../assets/skill-icons/python.png';
 import C from '../../../assets/skill-icons/c.png';
 import R from '../../../assets/skill-icons/r.png';
+import AWS from '../../../assets/skill-icons/aws.png';
 
 
 
@@ -85,6 +86,11 @@ const Skills = () => {
                         <img src={C} alt="C"></img>
                         <div>C</div>
                         <div className="button4 general">General</div>
+                    </div>
+                    <div className="grid-item">
+                        <img src={AWS} alt="AWS"></img>
+                        <div>AWS</div>
+                        <div className="button4 data">Data Science</div>
                     </div>
                     <div className="grid-item">
                         <img src={Python} alt="Python"></img>
