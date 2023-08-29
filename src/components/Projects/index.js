@@ -1,59 +1,58 @@
 import { useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
-import TigerTasks_Logo from '../../assets/images/projects/tigertasks_1.png';
+import TigerJobs_Logo from '../../assets/images/projects/tigerjobs_1.png';
 import Princetemon_Logo from '../../assets/images/projects/princetemon_1.png';
+import BallAR_Logo from '../../assets/images/projects/ballar_1.png';
+import EyeCheck_Logo from '../../assets/images/projects/eyecheck_1.png';
 import Website_Logo from '../../assets/images/projects/website_1.png';
 import Piel_Logo from '../../assets/images/projects/piel_1.png';
-import NBA_Logo from '../../assets/images/projects/nba_comparer_1.png';
-import RMS_Logo from '../../assets/images/projects/rms_1.png';
+import Covid_Logo from '../../assets/images/projects/covid_1.png';
 
-import TigerTasks_Desc from '../../assets/images/projects/tigertasks_2.png';
+import TigerJobs_Desc from '../../assets/images/projects/tigerjobs_2.png';
 import Princetemon_Desc from '../../assets/images/projects/princetemon_2.png';
+import BallAR_Desc from '../../assets/images/projects/ballar_desc.png';
+import EyeCheck_Desc from '../../assets/images/projects/eyecheck_desc.png';
 import Website_Desc from '../../assets/images/projects/website_3.png';
 import Piel_Desc from '../../assets/images/projects/piel_2.png';
-import NBA_Desc from '../../assets/images/projects/nba_comparer_2.png';
-import RMS_Desc from '../../assets/images/projects/rms_2.png';
+import Covid_Desc from '../../assets/images/projects/covid_desc.png';
 
-
-import TigerTasks_2 from '../../assets/images/projects/tigertasks_3.png';
+import TigerJobs_2 from '../../assets/images/projects/tigerjobs_3.png';
 import Princetemon_2 from '../../assets/images/projects/princetemon_3.png';
+import BallAR_2 from '../../assets/images/projects/ballar_2.png';
 import Website_2 from '../../assets/images/projects/website_4.png';
 import Piel_2 from '../../assets/images/projects/piel_3.png';
-import NBA_2 from '../../assets/images/projects/nba_comparer_3.png';
-import RMS_2 from '../../assets/images/projects/rms_3.png';
-
+import Covid_2 from '../../assets/images/projects/covid_2.png';
 
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 
 import JS from '../../assets/skill-icons/js.png';
 import REACT_img from '../../assets/skill-icons/react.png';
-import Golang from '../../assets/skill-icons/golang.png';
+import Flask_img from '../../assets/skill-icons/flask.png';
+import LensStudio from '../../assets/skill-icons/lensstudio.png';
 import HTML5 from '../../assets/skill-icons/html5.png';
-import JAVA from '../../assets/skill-icons/java.png'
-// import CSS3 from '../../assets/skill-icons/css3.png';
+import CSS3 from '../../assets/skill-icons/css3.png';
 import SCSS from '../../assets/skill-icons/scss.png';
 import Python from '../../assets/skill-icons/python.png';
-import Angular from '../../assets/skill-icons/angular.png';
-import Bootstrap from '../../assets/skill-icons/bootstrap.png';
-import MongoDB from '../../assets/skill-icons/mongodb.png';
+import R from '../../assets/skill-icons/r.png';
+import PostgreSQL from '../../assets/skill-icons/postgresql.png';
 
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import Modal from './Modal';
 
 
 const Projects = () => {
     const [letterClass] = useState('text-animate5');
-    const [isOpenTigerTasks, setIsOpenTigerTasks] = useState(false);
+    const [isOpenTigerJobs, setIsOpenTigerJobs] = useState(false);
     const [isOpenPrincetemon, setIsOpenPrincetemon] = useState(false);
+    const [isOpenBallAR, setIsOpenBallAR] = useState(false);
+    const [isOpenEyeCheck, setIsOpenEyeCheck] = useState(false);
     const [isOpenWebsite, setIsOpenWebsite] = useState(false);
     const [isOpenPiel, setIsOpenPiel] = useState(false);
-    const [isOpenNBA, setIsOpenNBA] = useState(false);
-    const [isOpenRMS, setIsOpenRMS] = useState(false);
-
+    const [isOpenCovid, setIsOpenCovid] = useState(false);
 
     return (
         <div className="container projects-page">
@@ -71,75 +70,72 @@ const Projects = () => {
                 </p>
                 <div className="grid-container">
                 <div className="grid-item">
-                        <img src={TigerTasks_Logo} alt="TigerTasks" onClick={() => setIsOpenTigerTasks(true)}></img>
-                        <div>TigerTasks</div>
+                        <img src={TigerJobs_Logo} alt="TigerTasks" onClick={() => setIsOpenTigerJobs(true)}></img>
+                        <div>TigerJobs</div>
                         <span className="grid-logos">
-                            <img className="grid-logo" src={REACT_img} alt="React"></img>
-                            <img className="grid-logo" src={Golang} alt="Golang"></img>
-                            <img className="grid-logo" src={MongoDB} alt="MongoDB"></img>
+                            <img className="grid-logo" src={Flask_img} alt="Flask"></img>
+                            <img className="grid-logo" src={HTML5} alt="HTML5"></img>
+                            <img className="grid-logo" src={CSS3} alt="CSS3"></img>
+                            <img className="grid-logo" src={JS} alt="JS"></img>
+                            <img className="grid-logo" src={PostgreSQL} alt="PostgreSQL"></img>
                         </span>
                 </div>
-                <Modal open={isOpenTigerTasks} 
-                    onClose={() => setIsOpenTigerTasks(false)} 
+                <Modal open={isOpenTigerJobs} 
+                    onClose={() => setIsOpenTigerJobs(false)} 
                     center
                     classNames={{
                         overlay: 'customOverlay',
                         modal: 'customModal',
                     }}>
-                        <h1 className="heading">TigerTasks</h1>
-                        <img src={TigerTasks_Desc} alt="Project"></img>
+                        <h1 className="heading">TigerJobs</h1>
+                        <img src={TigerJobs_Desc} alt="Project"></img>
                         <br></br>
                         <div>
-                            TigerTasks is a website that helps Princeton students get tasks done through 
-                            the Browse and the Create features. With the Browse Tasks page (shown
-                            in the image above), a user can help out a fellow Tiger 
-                            by looking through the added tasks and requesting to do some. 
-                            With the Create Tasks page (in the image below), a user can add a task 
-                            they need done in any capacity, whether it be designing a logo for a personal 
-                            project, getting tutoring for a difficult class, or even a basic need like grocery 
-                            shopping one weekend. Then, they can see requests from other user to do the task. 
-                            TigerTasks combines all these things to make it easier for 
-                            Princeton students to get tasks done.
+                           TigerJobs is a platform for Princeton students to leave reviews and 
+                           find what they need to land their next internship, job, or career. The
+                           website has four main pages: Jobs, Interviews, Companies, and Profile.
+                           The Jobs (shown above) and Interviews pages allow users to browse through different
+                           job/interview reviews and filter by factors such class year, major, 
+                           location, and much more. The Companies page (shown below) shows all companies 
+                           with reviews and their ratings. Users can see companies that are the most 
+                           popular for certain majors in order to find the best options for themselves.
+                           Lastly, on the Profile page, users can do their part and leave their own reviews
+                           to help out others. Other features include the ability to report inappropriate
+                           reviews and save reviews by upvoting them.
                         </div>
                         <br></br>
-                        <img src={TigerTasks_2} alt="Project Alternate"></img>
+                        <img src={TigerJobs_2} alt="Project Alternate"></img>
                         <br></br>
                         <div>
-                            To create this website, I first created a MongoDB cluster
-                            to use as a database. Then, I set up a backend API with Go
-                            that contained all the basic REST endpoints, as well as some
-                            added functionality to include filtering by the title and/or
-                            the category of the task. Next, I designed the website using
-                            React and the Material UI library, and called the different
-                            REST endpoints. Some other things that were a challenge were
-                            adding Google Authentication and using this authentication
-                            to get all tasks created and flagged by a specific user. Lastly,
-                            I had to create the logic for requesting a task so that it could 
-                            be visible by both the requester and the creator.
+                            I created this website with a fellow Princeton student.
+                            To do so, we used HTML/CSS/JS for the frontend and used jQuery
+                            and AJAX to update information asynchronously. The backend is
+                            set up with Flask and SQLAlchemy, which set up the functionality
+                            of the site and connects to the PostgreSQL database. Some 
+                            challenges with making the site were designing the schema
+                            so that all information about reviews and companies was stored
+                            efficiently, filtering reviews by features that 
+                            were stored as arrays, and creating fail-safes in case some database
+                            updates failed.
                         </div>
                         <br></br>
                         <div>
-                            I published the website with Heroku, so you can visit it
+                            We published the website with Render, so you can visit it
                             using the link below! Note that this website only works for 
-                            Princeton students so check out my video and Github for information 
-                            on it if you can't access it!
+                            Princeton students, but you can still see the home and about page.
+                            The Github README.md has a link showing all the pages and a quick
+                            tutorial as well.
                         </div>
                         <br></br>
-                        <b>Languages Used:&nbsp;</b>React, Go, MongoDB
+                        <b>Languages Used:&nbsp;</b>Flask, HTML, CSS, JS/jQuery/AJAX, PostgreSQL
                         <div className="actionsContainer">
-                            <a href="https://tigertasks.herokuapp.com" target="_blank" rel="noreferrer">
+                            <a href="https://tiger-jobs.onrender.com/" target="_blank" rel="noreferrer">
                                 <button className="demoBtn">
                                     Live Demo &nbsp;
                                     <FontAwesomeIcon icon={faUpRightFromSquare} color="white"></FontAwesomeIcon>
                                 </button>
                             </a>
-                            <a href="https://drive.google.com/file/d/1TsRISSM1E0vpWH4uFMzJuJwCbHb3XpEs/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <button className="videoBtn">
-                                    Video &nbsp;
-                                    <FontAwesomeIcon icon={faPlay} color="white"></FontAwesomeIcon>
-                                </button>
-                            </a>
-                            <a href="https://github.com/amkumar645/tigertasks" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/ambrim/TigerJobs" target="_blank" rel="noreferrer">
                                 <button className="codeBtn">
                                     Code &nbsp;
                                     <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
@@ -147,7 +143,7 @@ const Projects = () => {
                             </a>
                             <button
                                 className="cancelBtn"
-                                onClick={() => setIsOpenTigerTasks(false)}
+                                onClick={() => setIsOpenTigerJobs(false)}
                             >
                                 Close
                             </button>
@@ -218,6 +214,142 @@ const Projects = () => {
                         >
                             Close
                         </button>
+                        </div>
+                    </Modal>
+                    <div className="grid-item">
+                        <img src={BallAR_Logo} alt="Ball-AR" onClick={() => setIsOpenBallAR(true)}></img>
+                        <div>Ball-AR</div>
+                        <span className="grid-logos">
+                            <img className="grid-logo" src={LensStudio} alt="Lens Studio"></img>
+                            <img className="grid-logo" src={JS} alt="JS"></img>
+                        </span>
+                    </div>
+                    <Modal open={isOpenBallAR} 
+                        onClose={() => setIsOpenBallAR(false)} 
+                        center
+                        classNames={{
+                            overlay: 'customOverlay',
+                            modal: 'customModal',
+                        }}>
+                        <h1 className="heading">Ball-AR</h1>
+                        <img src={BallAR_Desc} alt="Project"></img>
+                        <br></br>
+                        <div>
+                           Ball-AR is an augmented reality (AR) game where two players in the same physical 
+                           space attempt to hit each other with virtual dodgeballs overlaid on the 
+                           physical world. Players begin by first scanning the surfaces in the shared physical 
+                           space. This entails walking around the room and pointing their mobile device at 
+                           all physical surfaces, which are then captured by the lens. 
+                           From this point on, each user now can throw their augmented ball at their 
+                           opponent by tapping the screen. The ball can bounce off of any of the 
+                           surfaces before hitting the opponent. If the ball hits three surfaces without 
+                           hitting the opponent, the player must collect the ball to throw it again. Players
+                           get more points if they ricochet off surfaces before hitting their opponent.
+                        </div>
+                        <br></br>
+                        <img src={BallAR_2} alt="Project Alternate"></img>
+                        <br></br>
+                        <div>
+                            I created this game in order to study the interactions between augmented reality,
+                            physical activity, and the surrounding physical environment. Thus, the features
+                            of the game (completely designed in
+                            Lens Studio) are designed to encourage movement and analysis of the real world.
+                            I tested my game with 10 participants.
+                        </div>
+                        <br></br>
+                        <div>
+                            The game has almost 1500 plays on Snapchat and is available at the link below.
+                            In addition, you can read the paper I wrote at the Github link below.
+                        </div>
+                        <br></br>
+                        <b>Languages Used:&nbsp;</b>Lens Studio, JavaScript
+                        <div className="actionsContainer">
+                            <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=6d741994c22f405a99808e7b69d6ddf5&metadata=01" target="_blank" rel="noreferrer">
+                                <button className="demoBtn">
+                                    Live Demo &nbsp;
+                                    <FontAwesomeIcon icon={faUpRightFromSquare} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <a href="https://github.com/amkumar645/Ball-AR" target="_blank" rel="noreferrer">
+                                <button className="codeBtn">
+                                    Code &nbsp;
+                                    <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <button
+                                className="cancelBtn"
+                                onClick={() => setIsOpenBallAR(false)}
+                            >
+                                Close
+                            </button>
+                        </div>
+                    </Modal>
+                    <div className="grid-item">
+                        <img src={EyeCheck_Logo} alt="Ball-AR" onClick={() => setIsOpenEyeCheck(true)}></img>
+                        <div>Eye-Check</div>
+                        <span className="grid-logos">
+                            <img className="grid-logo" src={REACT_img} alt="React Native"></img>
+                        </span>
+                    </div>
+                    <Modal open={isOpenEyeCheck} 
+                        onClose={() => setIsOpenEyeCheck(false)} 
+                        center
+                        classNames={{
+                            overlay: 'customOverlay',
+                            modal: 'customModal',
+                        }}>
+                        <h1 className="heading">Eye-Check</h1>
+                        <img src={EyeCheck_Desc} alt="Project"></img>
+                        <br></br>
+                        <div>
+                           EyeCheck is an app that guides medical students through the Ophthalmology intake process. 
+                           It is specifically optimized to aid in low-resource Spanish-speaking clinics.
+                           There are 4 app sections based on clinically-validated guidelines: 
+                           History, Exam, Pharmacy, Glossary. The history section covers
+                           basic questions to ask to patients. The exam section includes instructions
+                           for how to conduct an eye exam. The pharmacy section includes the different
+                           types of eye drops and when to use each. Lastly, the glossary shows some
+                           common terms and their Spanish translations. 
+                        </div>
+                        <br></br>
+                        <div>
+                            I created this app for my brother, a medical school student at Brown.
+                            He realized this app could aid Spanish-speaking clinics in lower income
+                            communities by providing resources and instructions. He sent me the mockup,
+                            and I used React Native and Expo to create the app for both iOS and Android.
+                            Some challenges were getting access to the flashlight using Expo, nesting
+                            tab navigation and stack navigation, and making sure the UI
+                            worked for both iOS and Android. 
+                        </div>
+                        <br></br>
+                        <div>
+                            The app is currently available on the iOS store at the link below and will
+                            be added to the Google Play store soon. In addition, we are in the process
+                            of publishing
+                            to the Canadian Medical Education Journal and
+                            the Journal of American Ophthalmology.
+                        </div>
+                        <br></br>
+                        <b>Languages Used:&nbsp;</b>React Native, Expo
+                        <div className="actionsContainer">
+                            <a href="https://apps.apple.com/us/app/eye-check/id1643416389" target="_blank" rel="noreferrer">
+                                <button className="demoBtn">
+                                    Live Demo &nbsp;
+                                    <FontAwesomeIcon icon={faUpRightFromSquare} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <a href="https://github.com/amkumar645/EyeCheck" target="_blank" rel="noreferrer">
+                                <button className="codeBtn">
+                                    Code &nbsp;
+                                    <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
+                                </button>
+                            </a>
+                            <button
+                                className="cancelBtn"
+                                onClick={() => setIsOpenEyeCheck(false)}
+                            >
+                                Close
+                            </button>
                         </div>
                     </Modal>
                     <div className="grid-item">
@@ -318,7 +450,8 @@ const Projects = () => {
                         </div>
                         <br></br>
                         <div>
-                            This project went on to win first place at the BEN Hacks competition.
+                            This project went on to win first place at the BEN Hacks competition. You can 
+                            download the app and try it for yourself at the link below.
                         </div>
                         <br></br>
                         <b>Languages Used:&nbsp;</b>Python, Swift
@@ -338,142 +471,56 @@ const Projects = () => {
                         </div>
                     </Modal>
                     <div className="grid-item">
-                        <img src={NBA_Logo} alt="NBA Comparer" onClick={() => setIsOpenNBA(true)}></img>
-                        <div>NBA Comparer</div>
+                        <img src={Covid_Logo} alt="COVID-19 Prediction" onClick={() => setIsOpenCovid(true)}></img>
+                        <div>COVID-19 Prediction</div>
                         <span className="grid-logos">
-                            <img className="grid-logo" src={Angular} alt="Angular"></img>
-                            <img className="grid-logo" src={Bootstrap} alt="Bootstrap"></img>
-                            <img className="grid-logo" src={Python} alt="Python"></img>
+                            <img className="grid-logo" src={R} alt="R"></img>
                         </span>
                     </div>
-                    <Modal open={isOpenNBA} 
-                    onClose={() => setIsOpenNBA(false)} 
+                    <Modal open={isOpenCovid} 
+                    onClose={() => setIsOpenCovid(false)} 
                     center
                     classNames={{
                         overlay: 'customOverlay',
                         modal: 'customModal',
                     }}>
-                        <h1 className="heading">NBA Comparer</h1>
-                        <img src={NBA_Desc} alt="Project"></img>
+                        <h1 className="heading">COVID-19 Prediction</h1>
+                        <img src={Covid_Desc} alt="Project"></img>
                         <br></br>
                         <div>
-                            As a big fan of basketball, I love comparing NBA players statistics 
-                            in order to judge who's having a good season and who isn't. One day, 
-                            when I was first learning Angular, I decided a great way to practice 
-                            was to create a website dedicated to comparing NBA players' statistics 
-                            against each other, so I did. As my first ever website, it has some issues, 
-                            but the functionality is there.
+                            This project uses R in Google Colaboratory to predict COVID-19 
+                            susceptibility to cases and deaths on the county level in 2022.
+                            To predict, a SuperLearner model was used with 110 variables relating
+                            to factors such as disease, mask usage, political affiliations,
+                            economic status, travel, demographics, and many more. 
+                            I predicted four outcomes: total cases, total deaths,
+                            cases per 100 people, deaths per 100 people. I found that many of the 
+                            places with the highest predicted total cases and total deaths were 
+                            the most populated cities in the US, while the highest predicted
+                            cases and deaths per capita tended to fall in the midwest. The most important variables
+                            for prediction ended up being vaccination and mask usage data, demographics,
+                            and political affiliations of counties. 
                         </div>
                         <br></br>
-                        <img src={NBA_2} alt="Project Alternate"></img>
+                        <img src={Covid_2} alt="Project Alternate"></img>
                         <br></br>
                         <div>
-                            This website, while quite simple, has a lot of underlying processes. 
-                            All the data came from merging preexisting datasets in Python, and 
-                            all the images were scraped from basketball-reference.com. 
-                            The data covers years 1950-2021, allowing the user to compare 
-                            any two individual seasons for any two individual players in this range. 
-                            In addition, there is a section where the user can view the data 
-                            season-by-season, and sort it according to different statistics. 
-                            Lastly, due to the changing nature of the NBA, there is a way to compare 
-                            adjusted statistics, which standardizes based on season.
+                            Around 1 GB of data and 110 variables were cleaned and used in a SuperLearner model to 
+                            predict the outcomes for 2830 out of 3007 counties in the United States.
+                            Over 200 correlation graphs and regressions were created in order to properly explore
+                            the data, with some examples shown in the plot above. The RMSE for COVID cases per 100
+                            was 5.2 per 100, while the RMSE for COVID deaths per 100 was 0.19 per 100. Thus, on average,
+                            the model was off by 5.2 cases and 0.19 deaths per 100 people in every county. 
                         </div>
                         <br></br>
                         <div>
-                            The website and functionality were all done in Angular, and the 
-                            data collection and cleaning was done in Python.
-                            Check it out using the link below!
+                            This project was conducted during my internship at MITRE and 
+                            was demoed to the company. 
                         </div>
                         <br></br>
-                        <b>Languages Used:&nbsp;</b>Angular, Bootstrap, HTML/CSS/TS, Python
+                        <b>Languages Used:&nbsp;</b>R
                         <div className="actionsContainer">
-                            <a href="https://nba-comparer.herokuapp.com" target="_blank" rel="noreferrer">
-                                <button className="demoBtn">
-                                    Live Demo &nbsp;
-                                    <FontAwesomeIcon icon={faUpRightFromSquare} color="white"></FontAwesomeIcon>
-                                </button>
-                            </a>
-                        <a href="https://github.com/amkumar645/NBA-Comparer" target="_blank" rel="noreferrer">
-                            <button className="codeBtn">
-                                Code &nbsp;
-                                <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
-                            </button>
-                        </a>
-                        <button
-                            className="cancelBtn"
-                            onClick={() => setIsOpenNBA(false)}
-                        >
-                            Close
-                        </button>
-                        </div>
-                    </Modal>
-
-                    <div className="grid-item">
-                        <img src={RMS_Logo} alt="RMS" onClick={() => setIsOpenRMS(true)}></img>
-                        <div>RMS</div>
-                        <span className="grid-logos">
-                            <img className="grid-logo" src={Angular} alt="Angular"></img>
-                            <img className="grid-logo" src={Bootstrap} alt="Bootstrap"></img>
-                            <img className="grid-logo" src={JAVA} alt="Java"></img>
-                        </span>
-                    </div>
-                    <Modal open={isOpenRMS} 
-                        onClose={() => setIsOpenRMS(false)} 
-                        center
-                        classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                        }}>
-                        <h1 className="heading">Recruitment Management System</h1>
-                        <img src={RMS_Desc} alt="Project"></img>
-                        <br></br>
-                        <div>
-                            For my internship at RIA Advisory, I was
-                            tasked with creating a full-stack application that was
-                            a hub for the job recruitment process. I was given a starter
-                            backend in Spring, which I updated a lot to fit my design.
-                            I then created three portals in Angular: the Applicant Console,
-                            the Admin Console, and the Interviewer Console. In the Applicant Console,
-                            a job applicant can search available jobs and update their personal profile
-                            to make applying to jobs easy. In the Admin Console, a company employee
-                            can add jobs to be visible by applicants. Lastly, in the Interviewer
-                            Console, a company employee can see all the current applications and add
-                            feedback or reject a candidate after interviewing them, which the applicant
-                            can see back in the Applicant Console.
-                        </div>
-                        <br></br>
-                        <img src={RMS_2} alt="Project Alternate"></img>
-                        <br></br>
-                        <div>
-                            To make this, I had to add lots of variables and filter operations
-                            to the Spring backend I was given. Then, I called these different 
-                            REST API endpoints in Angular and organized them with the help of Bootstrap.
-                            I also added a fake authentication by writing users to the backend,
-                            and this authentication determined whether you were able to access the 
-                            Applicant Portal as a candidate or the Admin and Interviewer Consoles as an
-                            employee. This was my first time making a full-stack website, and even
-                            though it was never published (or even hooked up to a database), it 
-                            is quite complex and has a lot of different features.
-                        </div>
-                        <br></br>
-                        <div>
-                            For my work on this project, I was hired by
-                            RIA Advisory to work part-time as a full stack
-                            consultant, where I created front-end screens
-                            for the company's new test automation software.
-                            To see more details on the project, check out the Github
-                            or the demo I created below. 
-                        </div>
-                        <br></br>
-                        <b>Languages Used:&nbsp;</b>Angular, Bootstrap, Spring Boot
-                        <div className="actionsContainer">
-                            <a href="https://drive.google.com/file/d/1r6lpq9lYQ2GQUzGBdUH3_f3bdacmWZWL/view?usp=sharing" target="_blank" rel="noreferrer">
-                                <button className="videoBtn">
-                                    Video &nbsp;
-                                    <FontAwesomeIcon icon={faPlay} color="white"></FontAwesomeIcon>
-                                </button>
-                            </a>
-                            <a href="https://github.com/amkumar645/RMS" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/amkumar645/COVID-Prediction" target="_blank" rel="noreferrer">
                                 <button className="codeBtn">
                                     Code &nbsp;
                                     <FontAwesomeIcon icon={faGithub} color="white"></FontAwesomeIcon>
@@ -481,7 +528,7 @@ const Projects = () => {
                             </a>
                             <button
                                 className="cancelBtn"
-                                onClick={() => setIsOpenRMS(false)}
+                                onClick={() => setIsOpenCovid(false)}
                             >
                                 Close
                             </button>
