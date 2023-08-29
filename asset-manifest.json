@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e506a82b.css",
-    "main.js": "/static/js/main.f2fd0839.js",
+    "main.js": "/static/js/main.4fec07ac.js",
     "static/js/787.6ffdacbf.chunk.js": "/static/js/787.6ffdacbf.chunk.js",
     "static/media/ballar_2.png": "/static/media/ballar_2.1a13806de7f7304759d1.png",
     "static/media/ballar_desc.png": "/static/media/ballar_desc.39751afb02bf5c005a06.png",
@@ -43,11 +43,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.e506a82b.css.map": "/static/css/main.e506a82b.css.map",
-    "main.f2fd0839.js.map": "/static/js/main.f2fd0839.js.map",
+    "main.4fec07ac.js.map": "/static/js/main.4fec07ac.js.map",
     "787.6ffdacbf.chunk.js.map": "/static/js/787.6ffdacbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e506a82b.css",
-    "static/js/main.f2fd0839.js"
+    "static/js/main.4fec07ac.js"
   ]
 }
