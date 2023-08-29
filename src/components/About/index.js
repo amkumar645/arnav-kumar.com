@@ -25,8 +25,8 @@ const About = () => {
                 </p>
                 <p>
                     My main interests include software development, data science,
-                    and machine learning. I most recently worked as a Software Engineering
-                    Intern at <Link to="/experience">MITRE Corporation</Link>. 
+                    and machine learning. I most recently worked as a Software Development
+                    Engineering Intern at <Link to="/experience">Amazon Web Services</Link>. 
                 </p>
                 <p>
                     In my free time, I'm either following along my favorite sports teams,
